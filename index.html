@@ -30,7 +30,7 @@
                 <p class="about-text">Welcome to my mysterious world through photography! I am an explorer and YouTuber, driven by the desire to uncover and document the hidden stories of the world...</p>
             </div>
         </section>
-
+        
         <section id="gallery">
             <div class="container">
                 <h2 class="section-title">Image Gallery</h2>
@@ -58,7 +58,27 @@
             </div>
         </section>
     </main>
+    <!-- Contact Us Modal -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+    
     <footer>
         <p>© 2025 Raptlyup Photography. All Rights Reserved.</p>
     </footer>
