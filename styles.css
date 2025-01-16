@@ -68,7 +68,7 @@ header nav a:hover {
 }
 
 .camera {
-    animation: cameraClick 1s ease-out;
+    animation: cameraClick 3s ease-out;
 }
 
 @keyframes cameraClick {
@@ -82,9 +82,11 @@ header nav a:hover {
     100% { opacity: 1; }
 }
 
+/* Make sure the loading screen disappears after the page loads */
 body.loaded #loading-screen {
     opacity: 0;
-    pointer-events: none;
+    pointer-events: none;  /* Prevent any interaction with the loading screen once it disappears */
+    transition: opacity 1s ease-in-out; /* Add smooth fading */
 }
 
 footer {
@@ -92,4 +94,30 @@ footer {
     text-align: center;
     padding: 1em 0;
     color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Spectral SC', serif;
+    font-size: 2.5em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #f0f0f0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
